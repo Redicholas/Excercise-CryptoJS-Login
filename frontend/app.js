@@ -21,10 +21,9 @@ function fetchUser(user) {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-      if (data.status === 200) login();
-      if (data.status === 401) alert("Wrong password");
-      if (data.status === 404) alert("User not found");
+      if (data.message === "Login successful") login();
+      if (data.message === "Wrong password") alert("Wrong password");
+      if (data.message === "User not found") alert("User not found");
     });
 }
 

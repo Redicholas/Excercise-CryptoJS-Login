@@ -2,7 +2,6 @@ var express = require("express");
 var router = express.Router();
 const fs = require("fs");
 const CryptoJS = require("crypto-js");
-const saltKey = require("../.config(hidden).js");
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
