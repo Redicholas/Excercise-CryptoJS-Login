@@ -1,6 +1,18 @@
 [
-    {
-        "username": "Nicholas",
-        "password": "U2FsdGVkX1/TKIZTHHsKgwZt/tZfyKYeh0ZJmrq4PXA="
-    }
+  {
+    "username": "Nicholas",
+    "password": "U2FsdGVkX1/TKIZTHHsKgwZt/tZfyKYeh0ZJmrq4PXA="
+  },
+  {
+    "username": "Evelina",
+    "password": "U2FsdGVkX1+a9hUgi3/byNcpvH9jG3bciUKNYOgBAjg="
+  },
+  {
+    "username": "Ronja",
+    "password": "U2FsdGVkX1995gYlWlKA2X6Um/EFacBAtGark02EGIc="
+  },
+  {
+    "username": "Admin",
+    "password": "U2FsdGVkX1+fmaTI+B6rLAbnnEAeZuFRRBCA4546TCA="
+  }
 ]

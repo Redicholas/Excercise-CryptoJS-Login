@@ -5,7 +5,13 @@ const CryptoJS = require("crypto-js");
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+  fs.readFile("./users.json", (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    res.send(JSON.parse(data));
+  });
 });
 
 router.post("/login", function (req, res, next) {
@@ -40,6 +46,39 @@ router.post("/login", function (req, res, next) {
     } else {
       res.status(404).json({
         message: "User not found",
+      });
+    }
+  });
+});
+
+router.post("/register", function (req, res, next) {
+  const newUser = {
+    username: req.body.username,
+    password: CryptoJS.AES.encrypt(req.body.password, "saltKey").toString(),
+  };
+
+  fs.readFile("./users.json", (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+
+    const users = JSON.parse(data);
+    const foundUser = users.find((u) => u.username === newUser.username);
+    if (foundUser) {
+      res.status(409).json({
+        message: "Username already taken",
+      });
+    } else {
+      users.push(newUser);
+      fs.writeFile("./users.json", JSON.stringify(users, null, 2), (err) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        res.status(201).json({
+          message: "User created",
+        });
       });
     }
   });

@@ -14,11 +14,28 @@
       <p>You are logged in!</p>
       <button id="logoutBtn">Logout</button>
     </div>
-    <div id="login" class="login">
+
+    <div id="login" class="loginBox">
       <h1>Login</h1>
       <input type="text" id="nameInput" placeholder="Name" />
       <input type="password" id="pwInput" placeholder="Password" />
       <button id="loginBtn">Login</button>
+      <small>Dont have an account?</small> <br />
+      <a class="toggleLogReg">Register</a>
+    </div>
+
+    <div id="registerBox" class="registerBox">
+      <h1>Register</h1>
+      <input type="text" id="registerNameInput" placeholder="Name" />
+      <input type="password" id="registerPwInput1" placeholder="Password" />
+      <input
+        type="password"
+        id="registerPwInput2"
+        placeholder="Confirm Password"
+      />
+      <button id="registerBtn">Register</button>
+      <small>Already have an account?</small> <br />
+      <a class="toggleLogReg">Login</a>
     </div>
   </body>
 </html>
