@@ -14,5 +14,17 @@
   {
     "username": "Admin",
     "password": "U2FsdGVkX1+fmaTI+B6rLAbnnEAeZuFRRBCA4546TCA="
+  },
+  {
+    "username": "admin2",
+    "password": "U2FsdGVkX1+5pmMkXIFVc27QBSoCsDWcANRE5Zzykzg="
+  },
+  {
+    "username": "admin3",
+    "password": "U2FsdGVkX199pKp8kz6SdfQQ1acc+XTtI8CmQVG/Pok="
+  },
+  {
+    "username": "admin4",
+    "password": "U2FsdGVkX18+V4CEPOmILbo/HqKGaOGoeMEvBWczamM="
   }
 ]

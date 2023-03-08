@@ -5,40 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
+    <script src="./app.js" defer type="module"></script>
     <title>Document</title>
   </head>
   <body>
-    <div id="home" class="home">
-      <h1>Welcome!</h1>
-      <p>
-        Not much to do here..... <br />
-        Try logging out!
-      </p>
-      <button id="logoutBtn">Logout</button>
-    </div>
-
-    <div id="login" class="loginBox">
-      <h1>Login</h1>
-      <input type="text" id="nameInput" placeholder="Name" />
-      <input type="password" id="pwInput" placeholder="Password" />
-      <button id="loginBtn">Login</button>
-      <small>Dont have an account?</small> <br />
-      <a class="toggleLogReg">Register</a>
-    </div>
-
-    <div id="registerBox" class="registerBox">
-      <h1>Register</h1>
-      <input type="text" id="registerNameInput" placeholder="Name" />
-      <input type="password" id="registerPwInput1" placeholder="Password" />
-      <input
-        type="password"
-        id="registerPwInput2"
-        placeholder="Confirm Password"
-      />
-      <button id="registerBtn">Register</button>
-      <small>Already have an account?</small> <br />
-      <a class="toggleLogReg">Login</a>
-    </div>
+    <div id="root"></div>
   </body>
 </html>
