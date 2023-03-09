@@ -1,6 +1,6 @@
 import { renderHomeCard } from "./home.js";
 import { renderLoginCard } from "./login.js";
-import { root } from "./app.js";
+import { root } from "../app.js";
 
 export function renderRegisterCard() {
   root.innerHTML = "";

@@ -1,4 +1,4 @@
-import { root } from "./app.js";
+import { root } from "../app.js";
 import { renderHomeCard } from "./home.js";
 import { renderRegisterCard } from "./register.js";
 

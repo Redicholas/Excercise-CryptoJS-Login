@@ -1,11 +1,12 @@
 #root {
   display: grid;
-  height: 100vh;
   background-color: rgb(40, 74, 117);
+  height: 80vh;
 }
 
 body {
   margin: 0;
+  background-color: #222222;
 }
 
 h1 {
@@ -42,6 +43,31 @@ button:hover {
 
 a {
   cursor: pointer;
+}
+
+header {
+  background-color: #222222;
+  display: grid;
+  height: 20vh;
+}
+
+header h1 {
+  color: rgb(182, 209, 235);
+  margin: 0;
+  place-self: center;
+}
+
+footer {
+  background-color: #222222;
+  color: rgb(182, 209, 235);
+  font-family: sans-serif;
+  height: 10vh;
+  display: grid;
+}
+
+footer > p {
+  margin: 0;
+  place-self: center;
 }
 
 .card {
